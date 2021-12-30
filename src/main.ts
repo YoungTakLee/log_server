@@ -8,7 +8,8 @@ async function bootstrap() {
         new ValidationPipe({
             whitelist:true,
             forbidNonWhitelisted:true,
-            transform:true
+            transform:true,
+            //skipUndefinedProperties:true
         })
     )
     await app.listen(3000);
